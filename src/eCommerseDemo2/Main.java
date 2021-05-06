@@ -15,7 +15,7 @@ public class Main {
 		UserService userService = new UserManager(new InMemoryUserDao());
 		GoogleService googleService = new AuthManager(userService, new UserValidationManager(), new EmailManager());
 		googleService.register(1, "yasemin.arslan@gmail.com", "yasemin1234", "Yasemin", "Arslan"); // Başarılı
-		googleService.register(2, "yasemin.arslan@gmail.com", "yasemin1234", "Yasemin", "Arslan"); // Başarısız e-posta mevcut
+		googleService.register(2, "yasemin.arslan@gmail.com", "yasemin1234", "Y", "Arslan"); // isim hatalı
 
 		GoogleService googleAuthService = new GoogleManagerAdapter();
 		googleAuthService.register(3, "ysmnrn@gmail.com", "yasemin1234", "Yasemin", "Arslan");

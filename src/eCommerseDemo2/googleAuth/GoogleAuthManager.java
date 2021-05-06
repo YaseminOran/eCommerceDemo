@@ -2,7 +2,7 @@ package eCommerseDemo2.googleAuth;
 
 public class GoogleAuthManager {
 	 public void register(String email,String password) {
-    	 //Google kodları, geri dönüşler vs gerçek kodlara göre ele alınabilir. Şimdilik her şartta kayıt alındı döndürelim.
+    	 //şimdilik dursun
     	 System.out.println("Google ile kayıt alındı :" + email);
      }
      public void login(String email,String password) {
